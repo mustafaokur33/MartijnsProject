@@ -1,0 +1,15 @@
+Can you write an Ansible playbook that:
+
+- reads attached files from a defined directory (ansible find task)
+- loops trough the security rules list of attached files
+- if the sourceAddressPrefixes list of a security rule contains more than 100 items, replace it with variable asml_summarized_routes (see below)
+-write the result to a new file
+
+
+asml_summarized_routes:
+-	10.0.0.0/8
+192.168.0.0/16
+172.16.0.0/12
+146.106.0.0/16
+194.105.120.0/21
+194.156.12.0/22
